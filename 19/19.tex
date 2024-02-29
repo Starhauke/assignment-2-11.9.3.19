@@ -1,0 +1,93 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}  
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{caption}
+
+\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                 
+\usepackage{color}                            
+\usepackage{array}                            
+\usepackage{longtable}                        
+\usepackage{calc}                            
+\usepackage{multirow}                      
+\usepackage{hhline}                           
+\usepackage{ifthen}                          
+\usepackage{lscape}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+\title{}
+\author{Sasa Mardi, EE23BTECH11222}
+\date{}
+\maketitle
+\textbf{Question 11.9.3-19:} Find the sum of the products of the corresponding terms of the sequences $2, 4, 8, 16, 32$ and $128, 32, 8, 2, \frac{1}{2}$.\\
+\textbf{Solution:}
+Define the sequences as follows:\\
+Sequence 1: \( x_1(n) = 2 \times 2^n \) with a common ratio of \( r_1 = 2 \).\\
+Sequence 2: \( x_2(n) = 128 \times \left(\frac{1}{4}\right)^n \) with a common ratio of \( r_2 = \frac{1}{4}\).\\
+Tables for both sequences:
+\[
+\begin{array}{|c|c|c|}
+\hline
+n & x_1(n) & x_2(n)\\
+\hline
+0 & 2 & 128 \\
+1 & 4 & 32 \\
+2 & 8 & 8 \\
+3 & 16 & 2 \\
+4 & 32 & \frac{1}{2} \\
+\hline
+\end{array}
+\]
+Table for the product of corresponding terms:
+\[
+\begin{array}{|c|c|c|c|}
+\hline
+n & x_1(n) & x_2(n) & x_1(n) \times x_2(n) \\
+\hline
+0 & 2 & 128 & 256 \\
+1 & 4 & 32 & 128 \\
+2 & 8 & 8 & 64 \\
+3 & 16 & 2 & 32 \\
+4 & 32 & \frac{1}{2} & 16 \\
+\hline
+\end{array}
+\]
+Sum of the products of corresponding terms:
+\[
+256 + 128 + 64 + 32 + 16 = 496
+\]
+So, the sum of the products of the corresponding terms of the sequences is \( 496 \).
+\end{document}
+
